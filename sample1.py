@@ -1,15 +1,15 @@
-# Factorial of a number
-def factorial(n):
-  rev=1
-  for i in range(1,n+1):
-    rev=rev*i
-  return rev
+# Printing a Armstrong Number
+num = input("Enter a Number ")
+length = 1
+length = length + len(num)
+arm_stg = 0
+for char in (num):
+    arm_stg = arm_stg + (int(char) ** (length - 1))
+    num = int(num)
+    arm_stg = int(arm_stg)
+if (arm_stg - num == 0):
+    print("It is a Armstrong number")
+else:
+    print("It is not a Armstrong number")
 
 
-while True:
-  n=int(input("Enter a Number "))
-  if (n==0):
-    break
-  else:
-    res = factorial(n)
-    print (res)
